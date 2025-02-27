@@ -1,3 +1,6 @@
+.body {
+    background-color: blue; /* Blue background */
+}
 .Anime {
     text-align: center;
   }
@@ -10,21 +13,21 @@
   .Anime-poster {
     display: inline-block;
     margin: 10px;
-    width: 200px; /* You can adjust the width as needed */
-    height: 300px; /* Adjust the height based on your image aspect ratio */
+    width: 200px; 
+    height: 300px; 
     overflow: hidden;
-    border-radius: 10px; /* Optional: To make rounded corners */
+    border-radius: 10px; 
   }
   
   .Anime-poster img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire box */
-    border-radius: 10px; /* Optional: Rounded corners for the images */
+    object-fit: cover; 
+    border-radius: 10px; 
     transition: transform 0.3s ease-in-out;
   }
   
   .Anime-poster img:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
+    transform: scale(1.05); 
   }
   
