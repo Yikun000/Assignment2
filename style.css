@@ -1,11 +1,33 @@
-.body {
-    background-color: blue; /* Blue background */
+body {
+    background-color: white; /* Blue background */
 }
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+
 .Anime {
     text-align: center;
   }
   
-  .Anime h1 {
+  .Anime h2 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
