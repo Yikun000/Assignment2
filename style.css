@@ -1,5 +1,5 @@
 body {
-    background-color: white; /* Blue background */
+    background-color: grey; 
 }
 
 .button-container {
@@ -24,12 +24,14 @@ button:hover {
 
 
 .Anime {
-    text-align: center;
+    text-align: left;
+    color:whitesmoke;
   }
   
   .Anime h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-style: oblique;
   }
   
   .Anime-poster {
