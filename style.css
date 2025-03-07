@@ -12,64 +12,55 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Button container */
-.button-container {
-  display: flex;
-  gap: 2vw;
-  justify-content: flex-end;
-  padding: 1vw;
-  margin: 0;
-}
-
-/* Buttons */
-.In, .Up {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  margin-top: 0;
-}
-
 .Logo {
-  font-size: 90px; 
-  color:rgb(201, 34, 34);
-  font-family: "Tiny5", serif;
-  margin: 0;
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 1500px;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Helvetica", Sans-serif;
+  color: rgb(123, 131, 237);
 }
 
-/* Specific button styles */
-.In {
-  background-color: aquamarine;
-}
-
-.Up {
-  background-color: lightcoral;
-}
-
-button:hover {
-  opacity: 0.9;
-  transform: scale(1.05);
-}
-
-/* Search bar */
-.searchBar {
-  display: flex;
-  width: 50%;
-  max-width: 1200px;
-  align-items: center;
-  transition: box-shadow 0.2s;
-  margin: auto;
-  margin-top: -145px;
-}
-
-.search-input {
-  font-size: 1.2rem;
+.HeaderSection {
+  position: fixed;
+  top: 0;
+  left: 50;
   width: 100%;
-  padding: 20px;
+  height: 100px;
+  background: rgb(129, 47, 47);
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Login {
+  background-color: rgb(123, 131, 237); 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+}
+
+.Register {
+  background-color: rgb(123, 131, 237); 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+}
+
+.SearchBar {
+  position: absolute;
+  left: 31.5%;
+  right: 100%;
+  width: 40%;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
   outline: none;
 }
 
