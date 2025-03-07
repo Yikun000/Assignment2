@@ -1,105 +1,101 @@
-body {
-    background-color: rgb(123, 131, 237); 
+head {
+  background-color: rgb(123, 131, 237);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
+body {
+  background-color: rgb(123, 131, 237);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Button container */
 .button-container {
   display: flex;
-  gap: 20px; 
-  right: 10%;
-  justify-content: right;
+  gap: 2vw;
+  justify-content: flex-end;
+  padding: 1vw;
+  margin: 0;
 }
 
-.In {
-  display:flex;
-  background-color: aquamarine;
-  font-size: 25px;
-  position: absolute;
-  top: 15px;
-  right: 5px;
+/* Buttons */
+.In, .Up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
   text-align: center;
+  margin-top: 0;
+}
+
+.Logo {
+  font-size: 90px; 
+  color:rgb(201, 34, 34);
   font-family: "Tiny5", serif;
-  font-weight: 400;
-  font-style: normal;
-  
+  margin: 0;
+}
+
+/* Specific button styles */
+.In {
+  background-color: aquamarine;
 }
 
 .Up {
-  display:flex;
   background-color: lightcoral;
-  font-family: "Tiny5", serif;
-  font-weight: 400;
-  font-style: normal;
-  position: absolute;
-  top: 15px;
-  right: 150px;
-  font-size: 25px;
-
 }
 
 button:hover {
-  display:flex;
   opacity: 0.9;
   transform: scale(1.05);
 }
 
-.searchBar{
-  display:flex;
-  width: max-content;
-  align-items: center;
+/* Search bar */
+.searchBar {
   display: flex;
-  padding: 20px;
-  border-radius: 28px;
+  width: 50%;
+  max-width: 1200px;
+  align-items: center;
   transition: box-shadow 0.2s;
-  
-}
-
-.searchBar:focus-within {
-  display:flex;
-  box-shadow: 0 0 5px rgba(0,0,0,0,0);
+  margin: auto;
+  margin-top: -145px;
 }
 
 .search-input {
-  display:flex;
-  font-size: 20px;
-  font-family: "Tiny5", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-  margin-left: 300px;
-  margin-top: -125px;
-  
-  width: 1200px;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px;
   outline: none;
 }
 
+/* Anime section */
 .Anime {
-  display:flex;
-  text-align: left;
-  color: whitesmoke;
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+  text-align: center;
 }
 
 .Anime h2 {
-  display:flex;
   font-size: 2rem;
-  margin-bottom: 10px;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .Anime-poster {
-  display:flex;
-  width: 180px; 
+  width: 180px;
   height: 300px;
-  overflow: hidden;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .Anime-poster img {
-  display:flex;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -108,22 +104,88 @@ button:hover {
 }
 
 .Anime-poster img:hover {
-  display:flex;
   transform: scale(1.05);
 }
+
+/* Footer */
 .footerinfo {
   color: rgb(12, 59, 145);
-  font-size: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
 }
+
 .social-links {
   display: flex;
-  gap: 15px; 
+  gap: 15px;
   justify-content: center;
   margin-top: 20px;
 }
 
 .social-links a {
-  font-size: 2rem; /* Adjust size of the icons */
+  font-size: 2rem;
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  padding: 5vw;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: rgb(123, 131, 237);
+  max-width: 80%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .button-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .In, .Up {
+      font-size: 2rem;
+      padding: 8px 16px;
+  }
+
+  .Anime-poster {
+      width: 150px;
+      height: 250px;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .search-input {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .In, .Up {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+  }
+
+  .Anime-poster {
+      width: 120px;
+      height: 200px;
+  }
+
+  .hero h1 {
+      font-size: 1.8rem;
+  }
 }
