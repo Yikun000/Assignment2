@@ -39,6 +39,7 @@ body {
   background-color: rgb(123, 131, 237); 
   color: white; 
   border: none; 
+  margin-right:-500px; ;
   padding: 10px 20px; 
   cursor: pointer; 
 }
@@ -77,6 +78,7 @@ body {
   font-size: 2rem;
   width: 100%;
   text-align: center;
+  color: rgb(12, 59, 145);
 }
 
 .Anime-poster {
